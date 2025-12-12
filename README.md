@@ -1,6 +1,6 @@
-# Antigravity Trading System 🚀
+# Prospect Theory Agent 🚀
 
-**Antigravity** is an AI-powered trading assistant designed to trade **QQQ** (Nasdaq-100 ETF) on a weekly basis. It uses **Prospect Theory** and **Reinforcement Learning** to make trading decisions that account for human-like risk perception (loss aversion).
+**Prospect Theory Agent** is an AI-powered trading assistant designed to trade **QQQ** (Nasdaq-100 ETF) on a weekly basis. It uses **Prospect Theory** and **Reinforcement Learning** to make trading decisions that account for human-like risk perception (loss aversion).
 
 ## ⚡️ Quick Start: How to Trade
 
