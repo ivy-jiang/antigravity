@@ -165,3 +165,19 @@ if __name__ == "__main__":
     print("4. This is NOT financial advice - use at your own risk")
     print("5. The model doesn't account for news, events, or fundamentals")
     print("=" * 70)
+
+    # --- LOGGING ---
+    import csv
+    from datetime import datetime
+    
+    log_file = 'trade_log.csv'
+    current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    current_price = df['price'].iloc[-1]
+    
+    try:
+        with open(log_file, 'a', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow([current_date, recommendation, f"{confidence_pct:.1f}%", f"{current_price:.2f}", "Auto-generated"])
+        print(f"\n✅ Logged recommendation to {log_file}")
+    except Exception as e:
+        print(f"\n❌ Failed to log trade: {e}")
